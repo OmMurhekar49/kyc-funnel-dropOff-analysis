@@ -29,62 +29,62 @@ Plus Error-Impact Mapping, Device-Tier cohorts, and vendor-fee waste.
 ## Repository layout
 ```text
 scripts/
-  01_generate_data.py         > batch simulator (seeded, reproducible)
-  02_load_to_mysql.py         > bulk-insert into MySQL
-  04_db_connector.py          > SQLAlchemy + mysql-connector-python -> DataFrames   [required .py]
-  06_export_powerbi_data.py   > writes the 5 CSVs Power BI loads (powerbi/data/)
+  01_generate_data.py            > batch simulator (seeded, reproducible)
+  02_load_to_mysql.py            > bulk-insert into MySQL
+  04_db_connector.py             > SQLAlchemy + mysql-connector-python -> DataFrames   [required .py]
+  06_export_powerbi_data.py      > writes the 5 CSVs Power BI loads (powerbi/data/)
 
 sql/
   03_1_create_tables.sql
   03_2_validation_and_analysis.sql
 
 notebooks/
-  05_kyc_funnel_analysis.ipynb   - cleaning, EDA, all charts                     [required .ipynb]
+  05_kyc_funnel_analysis.ipynb                     > cleaning, EDA, all charts      [required .ipynb]
 
 powerbi/
-  kyc-funnel-dropOff-analysis-dashboards.pbix   > interactive dashboard           [required .pbix]
-  kyc-funnel-dropOff-analysis-dashboards.pdf    > dashboard preview
-  data/                                         > CSVs the dashboard loads
+  kyc-funnel-dropOff-analysis-dashboards.pbix      > interactive dashboard           [required .pbix]
+  kyc-funnel-dropOff-analysis-dashboards.pdf       > dashboard preview
+  data/                                            > CSVs the dashboard loads
 
 papers/
   Paper1_Domain_Research.md
   Paper2_Technology_Research.md
 
-outputs/      > charts (PNG) and summary tables (CSV)
-data/         > raw generator output (CSV)
+outputs/                                           > charts (PNG) and summary tables (CSV)
+data/                                              > raw generator output (CSV)
 ```
 
 
 ### Execution order
 
-#### 01 — Generates the simulated data
+#### 01 : Generates the simulated data
 ```powershell
 python scripts\01_generate_data.py
 ```
 
-#### 02 — Loads the data into MySQL
+#### 02 : Loads the data into MySQL
 ```powershell
 python scripts\02_load_to_mysql.py
 ```
 
-#### 03 — Runs the SQL table creation
+#### 03 : Runs the SQL table creation
 Open and execute:
 ```text
 sql\03_1_create_tables.sql
 ```
 
-#### 03 — Runs the SQL validation and analysis
+#### 03 : Runs the SQL validation and analysis
 Open and execute:
 ```text
 sql\03_2_validation_and_analysis.sql
 ```
 
-#### 04 — Runs the Python database connector
+#### 04 : Runs the Python database connector
 ```powershell
 python scripts\04_db_connector.py
 ```
 
-#### 05 — Runs the analysis notebook
+#### 05 : Runs the analysis notebook
 Open:
 ```text
 notebooks\05_kyc_funnel_analysis.ipynb
@@ -92,12 +92,12 @@ notebooks\05_kyc_funnel_analysis.ipynb
 
 Running the notebook cells in order for data loading, cleaning, metric calculation, cohort analysis, and visualizations.
 
-#### 06 — Exports data for Power BI
+#### 06 : Exports data for Power BI
 ```powershell
 python scripts\06_export_powerbi_data.py
 ```
 
-#### 07 — Opens the Power BI dashboard
+#### 07 : Opens the Power BI dashboard
 Open:
 ```text
 powerbi\kyc-funnel-dropOff-analysis-dashboards.pbix
