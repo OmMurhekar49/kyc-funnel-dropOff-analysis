@@ -1,0 +1,4 @@
+device_tier,sessions,abandonment_pct,avg_doc_retries,avg_bio_errors
+Android-Budget,1937,40.11,0.43,0.43
+Android-MidTier,4010,26.56,0.18,0.2
+iOS-HighEnd,4053,19.57,0.1,0.1

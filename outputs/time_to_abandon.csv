@@ -1,0 +1,6 @@
+stage,No-intent (<5s),Mid (5-60s),Blocker (60s+),blocker_share_%
+registration,516,32,1,0.2
+phone_otp,274,78,1,0.3
+doc_upload,209,306,160,23.7
+liveness_check,89,512,114,15.9
+consent_sign,300,43,0,0.0

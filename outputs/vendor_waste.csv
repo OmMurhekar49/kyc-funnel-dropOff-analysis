@@ -1,0 +1,4 @@
+device_type,total_fees,wasted_on_failures,waste_pct
+Android-Budget,7540.5,2924.0,38.8
+Android-MidTier,14043.0,2750.0,19.6
+iOS-HighEnd,13518.0,1406.5,10.4

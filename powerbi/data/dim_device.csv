@@ -1,0 +1,4 @@
+device_tier,device_order
+iOS-HighEnd,1
+Android-MidTier,2
+Android-Budget,3

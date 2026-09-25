@@ -1,0 +1,6 @@
+stage,stage_order,stage_label
+registration,1,1 Registration
+phone_otp,2,2 Phone OTP
+doc_upload,3,3 Doc Upload
+liveness_check,4,4 Liveness Check
+consent_sign,5,5 Consent Sign
