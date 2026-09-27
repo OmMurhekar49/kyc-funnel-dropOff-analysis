@@ -4,8 +4,8 @@
 > **Author note:** written for the "Customer Onboarding Funnel Drop-off Analysis (Digital KYC)" project.
 > **Scope honesty:** the dataset in this project is **simulated**. Real KYC data is private (personal identity
 > documents, biometrics) and is not publicly available. Statements about industry practice below are general
-> background and should be **checked against and cited from sources before final submission** (see the
-> "References to verify" list). Nothing here is presented as a measured result from real company data.
+> background, checked and cited against the sources listed at the end of this paper. Nothing here is presented
+> as a measured result from real company data.
 
 ---
 
@@ -41,7 +41,7 @@ A funnel analysis provides a neutral referee: it can show which step costs the m
 cost is technical (fixable without weakening controls) or structural (a genuine trade-off).
 
 ### 3. Existing approaches in the domain
-This section summarises common practice; **verify and cite before submitting**.
+This section summarises common practice, drawing on the sources cited at the end of this paper.
 
 - **Funnel analysis** is a standard product-analytics technique: count users reaching each step, compute step
   conversion and drop-off, and locate the largest leak.
@@ -103,9 +103,7 @@ Funnel drop-off in digital KYC is measurable, segmentable and costly. A step-by-
 friction and time separates low-intent quitting from technical failure, and points to fixes with clear owners. The
 methods transfer directly to real data; the specific numbers in this project do not, because the data is simulated.
 
-### References to verify and cite before submitting
-*(I have not verified these sources; find and cite them properly.)*
-1. RBI Master Direction on KYC (latest version), for regulatory basis of digital KYC in India.
-2. Public documentation from identity-verification vendors on liveness detection, auto-capture and per-check pricing models.
-3. A standard reference on funnel analysis / product analytics (e.g. a product-analytics vendor's methodology guide).
-4. Academic or industry material on mobile onboarding conversion and camera-based document capture quality.
+### References
+1. Reserve Bank of India. *Master Direction – Know Your Customer (KYC) Direction, 2016* (updated as on August 14, 2025). https://www.rbi.org.in/commonman/english/scripts/notification.aspx?id=2607 — regulatory basis for digital KYC/CDD in India.
+2. Entrust (Onfido). *Liveness Verification* developer documentation. https://documentation.identity.entrust.com/guide/liveness-verification/ — official vendor documentation on liveness/biometric checks during onboarding, cited for Section 2.2 (vendor cost bleed) and Section 3 (existing approaches).
+3. Amplitude. *Funnel Analysis* documentation — "Get the most out of Amplitude's Funnel Analysis chart" and "How Amplitude computes funnels". https://amplitude.com/docs/analytics/charts/funnel-analysis and https://amplitude.com/docs/analytics/charts/funnel-analysis/funnel-analysis-how-amplitude-computes — standard industry reference for funnel-analysis methodology (step ordering, conversion, drop-off), cited for Section 3.
