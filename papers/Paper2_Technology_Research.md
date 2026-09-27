@@ -2,7 +2,7 @@
 ## Python, Pandas, NumPy, SQL/MySQL, SQLAlchemy and Power BI in a Funnel-Analysis Workflow
 
 > **Scope honesty:** describes how each tool is used *in this project*. General descriptions of the tools are
-> standard background; cite official documentation for final submission (see "References to verify").
+> standard background, cited from official documentation at the end of this paper.
 
 ---
 
@@ -97,10 +97,14 @@ dashboard is static (imported data), not a live feed.
   out of scope for a static, one-time analysis. Documented as future work.
 - **Big-data tools (Kafka, Spark, warehouses):** unjustified at ~10k sessions; naming them would be overstating.
 
-### References to verify and cite before submitting
-*(Not verified by me; cite from official docs.)*
-1. Python, NumPy, Pandas, Matplotlib, Seaborn official documentation.
-2. MySQL 8.0 Reference Manual (CREATE TABLE, foreign keys, CTEs).
-3. SQLAlchemy documentation (engines and connection URLs); MySQL Connector/Python documentation.
-4. Microsoft Power BI documentation (data modelling, DAX reference).
-5. Faker documentation.
+### References
+1. Python Software Foundation. *Python 3 documentation*. https://docs.python.org/3/
+2. NumPy. *NumPy documentation*. https://numpy.org/doc/stable/
+3. pandas. *pandas documentation*. https://pandas.pydata.org/docs/
+4. Matplotlib. *Matplotlib documentation*. https://matplotlib.org/stable/
+5. seaborn. *seaborn documentation*. https://seaborn.pydata.org/
+6. Oracle. *MySQL 8.0 Reference Manual* — CREATE TABLE and FOREIGN KEY Constraints. https://dev.mysql.com/doc/refman/8.0/en/create-table-foreign-keys.html
+7. SQLAlchemy. *Engine Configuration* (Database URLs, `create_engine`). https://docs.sqlalchemy.org/en/20/core/engines.html
+8. Oracle. *MySQL Connector/Python Developer Guide*. https://dev.mysql.com/doc/connector-python/en/
+9. Microsoft. *Power BI documentation* — data modelling and DAX reference. https://learn.microsoft.com/en-us/power-bi/
+10. Faker. *Faker documentation*. https://faker.readthedocs.io/en/stable/
